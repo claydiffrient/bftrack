@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "dependencies": {
     "native-base": "^0.5.8",
@@ -12,6 +13,23 @@
     "react-native-easy-grid": "^0.1.6",
     "react-native-flexbox-grid": "^0.2.2",
     "redux": "^3.6.0",
+    "redux-actions": "^0.12.0",
     "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^15.0.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-native": "^1.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.0.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0",
+    "eslint-plugin-react-native": "^2.0.0",
+    "jest": "^15.1.1",
+    "mockdate": "^1.0.4"
   }
 }
