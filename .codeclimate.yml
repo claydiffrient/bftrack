@@ -1,4 +1,4 @@
-engines: 
+engines:
   eslint:
-    enabled: true
+    enabled: false # Disabled until plugin/react-native is supported
     channel: "eslint-2"
