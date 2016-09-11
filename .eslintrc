@@ -11,11 +11,19 @@
     },
     "sourceType": "module"
   },
+  "parser": "babel-eslint",
   "plugins": [
     "react",
     "react-native"
   ],
   "rules": {
-    "comma-dangle": ["error", "only-multiline"]
+    "comma-dangle": [2, "only-multiline"],
+    "max-len": [1, {"code": 120}],
+    "space-before-function-paren": [2, "always"],
+    "react/jsx-filename-extension": [2, {"extensions": [".js"]}],
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-color-literals": 2,
   }
 }

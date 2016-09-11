@@ -1,15 +1,7 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
+import reduxLogger from 'redux-logger';
 import rootReducer from './reducers';
-
-const createStoreWithMiddleware = applyMiddleware(
-  thunkMiddleware
-)(createStore);
-
-export default function configureStore (initialState = initialState) {
-  const store = createStoreWithMiddleware(rootReducer, initialState);
-  return store;
-}
 
 export const initialState = {
   assets: {
@@ -39,3 +31,15 @@ export const initialState = {
   },
   transactions: []
 };
+
+const logger = reduxLogger();
+
+const createStoreWithMiddleware = applyMiddleware(
+  thunkMiddleware,
+  logger
+)(createStore);
+
+export default function configureStore (initState = initialState) {
+  const store = createStoreWithMiddleware(rootReducer, initState);
+  return store;
+}
