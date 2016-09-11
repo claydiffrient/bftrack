@@ -20,8 +20,7 @@ export const COLORS = {
   white: '#fff'
 };
 
-export function createTransaction ({ type, asset, quantity, price }) {
-  console.log(type);
+export function createTransaction (type, asset, quantity, price) {
   if (!TYPES.includes(type)) {
     throw new Error('Transaction type is invalid.');
   }
