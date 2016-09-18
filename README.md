@@ -1,7 +1,7 @@
 BFTrack
 =====================
 
-## This project is under active development and is not ready for use.
+**WIP:** This project is under active development and is not ready for use.
 
 [![Build Status](https://travis-ci.org/claydiffrient/bftrack.svg?branch=master)](https://travis-ci.org/claydiffrient/bftrack)
 
