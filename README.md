@@ -1,6 +1,8 @@
 BFTrack
 =====================
 
+## This project is under active development and is not ready for use.
+
 [![Build Status](https://travis-ci.org/claydiffrient/bftrack.svg?branch=master)](https://travis-ci.org/claydiffrient/bftrack)
 
 [![Test Coverage](https://codeclimate.com/github/claydiffrient/bftrack/badges/coverage.svg)](https://codeclimate.com/github/claydiffrient/bftrack/coverage)
